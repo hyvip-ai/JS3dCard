@@ -1,0 +1,198 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.container{
+    width: 700px;
+    height: 600px;
+    margin: 50px auto;
+  position: relative;
+   cursor: pointer;
+  
+    
+   
+}
+.backwheel{
+    transition: all 5.5s;
+    transform-origin: 50%;
+  transform-box: fill-box;
+}
+button{
+    cursor: pointer;
+}
+.inner{
+   
+    height: 110%;
+    width: 80%;
+    margin: 40px auto;
+    border-radius: 20px;
+    box-shadow: 0px 10px 10px rgba(0, 0,0, 0.2) , -10px 0px 10px rgba(0, 0,0, 0.2); 
+    transform: perspective(800px);
+    transform-style: preserve-3d;
+    position: absolute;
+    top: -10%;
+    left: 10.5%;
+   
+}
+svg{
+    height: 300px;
+    width: 80%;
+    margin: 0px auto;
+    margin-bottom: 20px;
+    transition: all 0.5s;
+  position: relative;
+    z-index: 1;
+
+}
+.circle{
+    content: "";
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 0;
+    top: 20%;
+    left: 30%;
+    background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+}
+.container .inner .description{
+   
+    text-align: center;
+  
+}
+.container .inner .description h1{
+    font-size: 25px;
+    margin-bottom: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 5px 5px 5px rgba(0, 0,0, 0.2);
+}
+.container .inner .description h4{
+    font-size: 20px;
+    margin-bottom: 25px;
+    text-shadow: 5px 5px 5px rgba(0, 0,0, 0.2);
+
+}
+.container .inner .description .purchase{
+    width: 80%;
+    height: 40px;
+    
+    border-radius: 8px;
+    background-color: coral;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    border-right: 3px solid rgba(0, 0,0, 0.2);
+    border-bottom: 3px solid rgba(0, 0,0, 0.2);
+    transition: all 0.5s;
+
+}
+.container .inner .description .info{
+    width: 80%;
+    height: 40px;
+    
+    border-radius: 8px;
+    background-color: coral;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    margin-bottom: 15px;
+    border-right: 3px solid rgba(0, 0,0, 0.2);
+    border-bottom: 3px solid rgba(0, 0,0, 0.2);
+    transition: all 0.5s;
+    
+
+}
+.container .inner .description .purchase:hover{
+    background-color: chocolate;
+    color: white;
+}
+.container .inner .description .info:hover{
+    background-color: chocolate;
+    color: white;
+}
+.container .inner .description .colors{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+.container .inner .description .colors .orange{
+    width: 15%;
+    height: 30px;
+    
+    border-radius: 15px;
+    background-color: white;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    
+    transition: all 0.5s;
+
+}
+
+.container .inner .description .colors .orange:hover{
+    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    color: white;
+    border: none;
+    box-shadow: 2px 5px 5px rgba(0, 0,0, 0.2);
+}
+.container .inner .description .colors .red{
+    width: 15%;
+    height: 30px;
+    
+    border-radius: 15px;
+    background-color: white;
+  
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    border: none;
+    transition: all 0.5s;
+
+}
+.container .inner .description .colors .red:hover{
+    background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+    color: white;
+    border: none;
+    box-shadow: 2px 5px 5px rgba(0, 0,0, 0.2);
+}
+.container .inner .description .colors .black{
+    width: 15%;
+    height: 30px;
+   
+    border-radius: 15px;
+    background-color: white;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    border: none;
+    transition: all 0.5s;
+
+}
+.container .inner .description .colors .black:hover{
+    background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
+ background-blend-mode: multiply,multiply;
+ box-shadow: 2px 5px 5px rgba(0, 0,0, 0.2);
+ color: white;
+ border: none;
+}
+.container .inner .description .colors .blue{
+    width: 15%;
+    height: 30px;
+    color: black;
+    border-radius: 15px;
+    background-color: transparent;
+    
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    border: none;
+    transition: all 0.5s;
+
+}
+.container .inner .description .colors .blue:hover{
+    background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+    box-shadow: 2px 5px 5px rgba(0, 0,0, 0.2);
+    color: white;
+    border: none;
+}
+
